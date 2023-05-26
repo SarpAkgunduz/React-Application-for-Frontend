@@ -39,7 +39,12 @@
   .expense-item__date{
     font-style: normal;
     color: white;
+    padding: 0.5rem;
+    border: 1px solid white;
+    background-color: #2c3263;
+    border-radius: 12px;
   }
+  
   @media (min-width: 580px) {
     .expense-item__description {
       flex-direction: row;

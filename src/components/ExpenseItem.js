@@ -8,9 +8,8 @@ function ExpenseItem(props) {
     return (
     <div className = "expense-item">
         <div className='expense-item__date'>
-            <div>{day}</div>
-            <div>{month}</div>
-            <div>{year}</div>
+            <div>{day}{" / "}{month}{" / "}{year}</div>
+            
         </div>
         <div className = "expense-item__description">
             <h2 className = "expense-item__description h2">{props.title}</h2>
