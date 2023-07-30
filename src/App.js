@@ -1,5 +1,7 @@
 import './App.css';
-import Expenses from './components/Expenses';
+import Expenses from './components/Expenses/Expenses';
+import NavBar from './components/UI/NavigateBar';
+
 
 function App() {
   const expenses = [
@@ -26,6 +28,7 @@ function App() {
 
   return (
     <div className="App">
+      <NavBar />
       <Expenses items={expenses}></Expenses>
     </div>
   );
