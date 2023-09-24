@@ -1,0 +1,31 @@
+.navigate__bar{
+    position:relative;
+    top: 0;
+    max-height: 7%;
+    background-color: rgb(75, 74, 74);
+    width: 100%;
+    max-width: 100%;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content:center;
+}
+
+
+.navigate__bar ul{
+    display: flex;
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    
+}
+
+.navigate__bar li{
+    display:grid;
+    margin-inline-end: 5rem;
+    width: 50px;
+}
+.navigate__bar links {
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+  }
