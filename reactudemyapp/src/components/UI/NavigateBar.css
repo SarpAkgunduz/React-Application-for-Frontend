@@ -1,5 +1,5 @@
-.navigate__bar{
-    position:relative;
+.navigate__bar {
+    position: relative;
     top: 0;
     max-height: 7%;
     background-color: rgb(75, 74, 74);
@@ -7,25 +7,45 @@
     max-width: 100%;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
     display: flex;
-    justify-content:center;
+    justify-content: center;
+    align-items: center;
 }
 
-
-.navigate__bar ul{
+.navigate__bar ul {
     display: flex;
-    list-style-type: none; /* Remove bullet points */
+    list-style-type: none; /* Bullet points kaldırılır */
     margin: 0;
-    
+    padding: 0;
 }
 
-.navigate__bar li{
-    display:grid;
-    margin-inline-end: 5rem;
-    width: 50px;
+.navigate__bar li {
+    display: flex;
+    align-items: center;
+    width: auto;
 }
-.navigate__bar links {
+
+.navigate__bar .links {
     font-size: 1rem;
     font-weight: bold;
     text-decoration: none;
     color: white;
-  }
+    padding: 12px 25px; /* Buton gibi padding, sağ ve soldan biraz daha geniş */
+    background-color: rgb(60, 60, 60);
+    border-radius: 0; /* Köşeleri dikdörtgen yapıyoruz */
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Animasyon ekleniyor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Butona gölge efekti */
+    width: 150px; /* Sabit genişlik, butonların enini büyütür */
+}
+
+.navigate__bar .links:hover {
+    background-color: #4C6B73; /* Hover olduğunda renk değişir */
+    transform: scale(1.05); /* Hover efekti ile öğe biraz büyür */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Hoverda gölge etkisi artar */
+}
+
+.navigate__bar .links:active {
+    background-color: #1E5162; /* Tıklanırken renk değişimi */
+    transform: scale(1); /* Tıklandığında küçülme efekti */
+}

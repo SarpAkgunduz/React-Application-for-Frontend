@@ -1,20 +1,20 @@
-import "./NavigateBar.css"
+import "./NavigateBar.css";
 
 const NavBar = () => {
   return (
     <nav className="navigate__bar">
       <ul>
         <li>
-          <links href="/">Home</links>
+          <a href="/" className="links">Home</a>
         </li>
         <li>
-          <links href="/about">About</links>
+          <a href="/about" className="links">About</a>
         </li>
         <li>
-          <links href="/services">Services</links>
+          <a href="/services" className="links">Services</a>
         </li>
         <li>
-          <links href="/contact">Contact</links>
+          <a href="/contact" className="links">Contact</a>
         </li>
       </ul>
     </nav>
